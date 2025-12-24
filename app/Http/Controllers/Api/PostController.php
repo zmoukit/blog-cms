@@ -3,13 +3,15 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Post;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\StorePostRequest;
-use App\Http\Requests\UpdatePostRequest;
 use App\Http\Resources\PostResource;
 
-class PostController extends Controller
+class PostController extends BaseController
 {
+    public function __construct()
+    {
+        $this->authorizeResource(Post::class, 'post');
+    }
+
     public function index()
     {
         return PostResource::collection(
