@@ -3,6 +3,7 @@
 ## Overview
 This is a **Laravel Blog & CMS project** built to showcase full-stack Laravel skills, including user authentication, role-based access, RESTful APIs, and content management.  
 The project demonstrates best practices in **MVC structure, API development, testing, and deployment**.
+The data model is designed using clear domain relationships with **Eloquent ORM**, following best practices for maintainability and readability.
 
 ## Purpose
 The main goals of this project are:
